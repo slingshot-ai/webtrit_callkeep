@@ -119,7 +119,7 @@ class PhoneConnection internal constructor(
     init {
         audioModeIsVoip = true
         connectionProperties = PROPERTY_SELF_MANAGED
-        connectionCapabilities = CAPABILITY_MUTE or CAPABILITY_SUPPORT_HOLD
+        connectionCapabilities = CAPABILITY_MUTE or CAPABILITY_SUPPORT_HOLD or CAPABILITY_HOLD
 
         setInitializing()
         updateData(metadata)
